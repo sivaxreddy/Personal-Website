@@ -4,33 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manas_siva's page</title>
-    <style>
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            background-color: black;
-            display: grid;
-            
-        }
-        div {
-    width: 100px;
-    height: 100px;
-    
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
-}
-    </style>
+    <title>Simple app</title>
 </head>
-
 <body>
+        
+        <input id="todo-title" type="text">
+        <input id ="date-picker" type="date" />
+        <button onclick= "addtodo()"> Add todo </button>
+        <div id="todo-list"></div>
+    <script>
+        
 
-<div class="grid">
-    <h2 style="color: white;">Under__Construction</h2>
-</div>
+        const todos = [
+            { title: "siva",
+              duedate: "2001-02-15"
+            },
+            {
+              title: "mano",
+              duedate: "2000-12-17"
+            }
+                      ];
+
+        render()
+        
+
+        function addtodo(){
+            const textbox = document.getElementById('todo-title')
+            const title = textbox.value;
+            
+            const datePicker = document.getElementById("date-picker");
+            const dueDate = datePicker.value;
+
+            const id = new Date().getTime();
+
+            todos.push(
+                {
+                    title : title,
+                    dueDate: dueDate
+                }
+            );
+
+            render()
+            }
+        
+            function deleteTodo(event){
+                console.log(event);
+            }
+
+
+        function render(){
+
+            document.getElementById("todo-list").innerHTML = '';
+
+            todos.forEach(function (todo){
+
+            const element = document.createElement("div");
+            element.innerText = todo.title;
+
+            const deleteButton = document.createElement("button");
+            deleteButton.innerHTML = "delete"; 
+            deleteButton.style = "margin-left: 20px; "
+            deleteButton.onclick = deleteTodo;
+            element.appendChild(deleteButton);
+
+            const todoList = document.getElementById('todo-list');
+            todoList.appendChild(element);
+
+        });
+        }
+    </script>
 </body>
 </html>
