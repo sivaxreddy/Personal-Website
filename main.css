@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#logo{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+
+}
+.projects{
+    font-size: 2rem;
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    
+}
+
+.projects{
+    display: inline-block;
+    color: rgb(248, 124, 23);
+    text-decoration: none;
+}
+.projects:hover{
+    color: rgb(86, 122, 254);
+    transition: 0.3s;
+}
+.projects::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(3, 57, 255);
+    transition:  .3s;
+}
+
+.projects:hover::after {
+    color: rgb(3, 57, 255);
+    width: 100%;
+    transition: width .3s;
+}
