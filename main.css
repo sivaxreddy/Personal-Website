@@ -2,38 +2,47 @@ body{
     background-color: rgb(0, 0, 0);
     font-family: 'Josefin Sans', sans-serif;
 }
-#logo{
+
+#smiley{
+    
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.options{
     font-size: 2rem;
     color: white;
-    text-decoration: none;
     position: absolute;
-    right: 5%;
-    top: 3%;
-
-}
-.projects{
-    font-size: 2rem;
-    position: absolute;
-    left: 5%;
-    top: 35%;
+    left: 20%;
+    top: 40%;
     
 }
 
-.projects{
-    display: inline-block;
-    color: rgb(248, 124, 23);
+a{
     text-decoration: none;
-}
-.projects:hover{
-    color: rgb(86, 122, 254);
-    transition: 0.3s;
+    color: white;
 }
 
+li{
+    list-style-type: none;
+    
+}
 
+h1{
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
 
 footer{
     position: absolute;
-    bottom: 0%;
-    right: 0%;
+    bottom: 2%;
+    right: 2%;
     
 }
+
+
+

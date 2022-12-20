@@ -1,0 +1,159 @@
+[33mcommit 66f0988fd5fbdd0ccb9c77989d1a605ad29650de[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 0128edb 1fa421d
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 19:38:25 2022 +0530
+
+    Merge branch 'main' of https://github.com/ManaSiva/Personal-Website
+
+[33mcommit 0128edbf040f0c63e8145c44513abb8cb9f496dc[m
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 19:38:07 2022 +0530
+
+    changed contact postion
+
+[33mcommit 1fa421d65438241b05a4a722ae41dad8cd311492[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 19:28:44 2022 +0530
+
+    Create CNAME
+
+[33mcommit 0f3a4ba5bc791cbfc61d627f1ca505daff61738a[m
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 18:38:56 2022 +0530
+
+    o
+
+[33mcommit 5e574014c9c9a589408c5d160e795e71607878b5[m
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 18:36:09 2022 +0530
+
+    empty project file
+
+[33mcommit 6bd271c0bc93179417cf0c61f31958406c44e7a2[m
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 18:35:28 2022 +0530
+
+    empty project file
+
+[33mcommit b718ea611671f5f54f10226ed5438f46907d8615[m
+Merge: 25bade7 3f9a3dd
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 18:28:42 2022 +0530
+
+    Merge branch 'main' of https://github.com/ManaSiva/Personal-Website
+
+[33mcommit 25bade70b9a0d4a37785a7ecb418a2e8109982f6[m
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Tue Dec 20 18:28:19 2022 +0530
+
+    added about
+
+[33mcommit 3f9a3dd3acfbe3e8424c6e028d244ad70262bcbb[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Mon Dec 19 21:39:35 2022 +0530
+
+    Create CNAME
+
+[33mcommit f4ac82c97d47029c78c2b52c0a4c58a1b84473d6[m
+Author: ManaSiva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Mon Dec 19 21:37:40 2022 +0530
+
+    trail
+
+[33mcommit 48ac10ba023984e724f06cd359fae8aa0e611540[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Mon Dec 19 20:15:02 2022 +0530
+
+    Delete projects.html
+
+[33mcommit 61333a2886e980b748d6f3d24af5ea35143b2a0d[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Mon Dec 19 20:12:32 2022 +0530
+
+    Create projects.html
+
+[33mcommit 4991604880852f7c16f74f7cb3fca4984f28c95e[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Mon Dec 19 20:12:13 2022 +0530
+
+    Create index.html
+
+[33mcommit 4416985c11573a85513b9988f2729f427dfeef5a[m
+Author: umashankar <84461244+Sivaumashankar@users.noreply.github.com>
+Date:   Mon Dec 19 20:08:14 2022 +0530
+
+    Delete CNAME
+
+[33mcommit df02c7786295f4eca6a0833e568c5a734829f56b[m
+Author: umashankar <84461244+Sivaumashankar@users.noreply.github.com>
+Date:   Mon Dec 19 20:07:53 2022 +0530
+
+    Delete index.html
+
+[33mcommit 5a04f398d0c6095f08c39eaa8f84cdb69c9c5565[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Fri Dec 16 08:46:47 2022 +0530
+
+    indhaaka debba thinna
+    
+    idhi pakka blank page eh
+
+[33mcommit 7fcbb9403d560ae3db256618f71047ba8be0320f[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Fri Dec 16 08:44:34 2022 +0530
+
+    changed to blinking msg
+
+[33mcommit 831af72c6baab923dcc0c11dd20a10d5c850544c[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 17:52:16 2022 +0530
+
+    Update index.html
+
+[33mcommit 7f5efb39d24a3f147c3adca3f532eec9b3150841[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 17:34:34 2022 +0530
+
+    Update index.html
+
+[33mcommit d6510055fd37ca59ea60f70bba98ade370c5348d[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 17:27:12 2022 +0530
+
+    Rename main.html to index.html
+
+[33mcommit 0a609f26921367ebd77222b31ecc1ccd9aaf4122[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 17:18:15 2022 +0530
+
+    Create CNAME
+
+[33mcommit e920140dc4a65962b832d87b91666076a3939433[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 17:18:06 2022 +0530
+
+    Delete CNAME
+
+[33mcommit f9b7828cb32f003982f8ae40dce6b1c302c68832[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 17:15:11 2022 +0530
+
+    Update CNAME
+
+[33mcommit c6533cd62d5c1afdef49988f10818bd33ab0e673[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 17:04:58 2022 +0530
+
+    Create CNAME
+
+[33mcommit 73a3a1ce96dd7e97ba68a84b0901e91dd19b9d2f[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 14:34:54 2022 +0530
+
+    Create main.html
+
+[33mcommit 8131598db2912dff7419c6ea91fb32de1b145bf3[m
+Author: Manas_siva <105069041+ManaSiva@users.noreply.github.com>
+Date:   Thu Dec 15 14:32:27 2022 +0530
+
+    Initial commit
