@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     font-family: 'Josefin Sans', sans-serif;
 }
 #logo{
@@ -28,17 +28,12 @@ body{
     color: rgb(86, 122, 254);
     transition: 0.3s;
 }
-.projects::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: rgb(3, 57, 255);
-    transition:  .3s;
-}
 
-.projects:hover::after {
-    color: rgb(3, 57, 255);
-    width: 100%;
-    transition: width .3s;
+
+
+footer{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    
 }
