@@ -44,5 +44,65 @@ footer{
     
 }
 
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    #smiley{
+        width: 19rem;
+      }
 
+    .options{
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+        
+    }
+    #twitter-logo{
+        width: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+    #smiley{
+        width:10rem;
+      }
+
+    .options{
+        
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 38%;
+        font-size: 1.4rem;
+        
+    }
+    #twitter-logo{
+        width: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    #smiley{
+        width: 10rem;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        }
+
+    .options{
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 38%;
+        font-size: 1.4rem;
+        
+        }
+    #twitter-logo{
+        width: 1.4rem;
+        }
+}
 
