@@ -48,14 +48,17 @@ footer{
     /*Tablets [601px -> 1200px]*/
     #smiley{
         width: 19rem;
+        position: absolute;
+        top: 9%;
+        right: 9%;
       }
 
     .options{
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: white;
         position: absolute;
-        left: 20%;
-        top: 40%;
+        left: 15%;
+        top: 39%;
         
     }
     #twitter-logo{
