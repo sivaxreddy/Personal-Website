@@ -109,3 +109,8 @@ footer{
         }
 }
 
+
+svg {
+    fill:rgb(0, 255, 251);
+    margin: 0.5rem;
+}
