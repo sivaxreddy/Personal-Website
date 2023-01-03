@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: #181818;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -12,7 +12,7 @@ body{
 
 .options{
     font-size: 2rem;
-    color: white;
+    color: #ffffff;
     position: absolute;
     left: 20%;
     top: 40%;
