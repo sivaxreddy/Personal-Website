@@ -1,5 +1,12 @@
+:root{
+    --background-color1: #181818;
+    --background-color2: #0f0f0f;
+
+
+}
+
 body{
-    background-color: #181818;
+    background-color: var(--background-color2);
     font-family: 'Josefin Sans', sans-serif;
 }
 
