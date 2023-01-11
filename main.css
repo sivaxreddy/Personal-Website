@@ -134,3 +134,8 @@ svg {
     fill:rgb(9, 206, 250);
     margin: 0.5rem;
 }
+
+img{
+    width: 100%;
+    height: 100vh;
+}
