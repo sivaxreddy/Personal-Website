@@ -10,23 +10,8 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#light{
-    position: absolute;
-    height: 1.5rem;
-    width: 1.5rem;
-    top: 1rem;
-    left: 1rem;
-    border-radius: 0.3rem;
-    
-    background-color: #00ffff ;
-    box-shadow: 0.1rem 0.1rem 40px 10px #00ffff;
-}
-#smiley{
-    
-    position: absolute;
-    top: 10%;
-    right: 10%;
-}
+
+
 
 .options{
     font-size: 2rem;
