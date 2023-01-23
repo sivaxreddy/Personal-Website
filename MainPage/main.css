@@ -11,7 +11,12 @@ body{
 }
 
 
-
+.test{
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-right: auto;
+}
 
 .options{
     font-size: 2rem;
