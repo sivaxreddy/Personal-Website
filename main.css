@@ -14,7 +14,14 @@ body{
 }
 
 
-
+h1{
+    font-family: 'Futura Std', sans-serif;
+    color: #FF6700;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    font-size: 1.7rem;
+}
 #red {
     z-index: 1;
     position: absolute;
