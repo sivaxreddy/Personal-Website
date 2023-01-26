@@ -6,62 +6,23 @@
 }
 
 body{
-    min-height: 100vh;
-    background-color: var(--background-color2);
-    font-family: 'Josefin Sans', sans-serif;
-    overflow: hidden;
-    margin: 0%;
-}
-
-
-h1{
-    font-family: 'Futura Std', sans-serif;
-    color: #FF6700;
-    position: absolute;
-    top: 30%;
-    right: 30%;
-    font-size: 1.7rem;
-}
-#red {
-    z-index: 1;
-    position: absolute;
-    top: 61.80%;
-    
-    
-    width: 100vw;
-    height: 100vh;
     background-color: var(--background-color1);
-    transform: skewY(-4deg);
-
-    }
-
-footer{
-    z-index: 2;
-    display: grid;
-    
-    justify-content: right;
-    align-content:flex-end;
-    flex-wrap: wrap;
+    margin: 0;
+}
+header{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(24, 99%, 58%);
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: 20%;
     
 }
-
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
-    #smiley{
-        width: 19rem;
-        position: absolute;
-        top: 9%;
-        right: 9%;
-      }
-
-    .options{
-        font-size: 1.8rem;
-        color: white;
-        position: absolute;
-        left: 15%;
-        top: 39%;
-        
-    }
+  
     #twitter-logo{
         width: 2rem;
     }
@@ -70,19 +31,7 @@ footer{
 
 @media only screen and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
-    #smiley{
-        width:10rem;
-      }
-
-    .options{
-        
-        color: white;
-        position: absolute;
-        left: 10%;
-        top: 38%;
-        font-size: 1.4rem;
-        
-    }
+   
     #twitter-logo{
         width: 1.4rem;
     }
@@ -90,33 +39,31 @@ footer{
 
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
-    #smiley{
-        width: 10rem;
-        position: absolute;
-        top: 10%;
-        right: 10%;
-        }
-
-    .options{
-        color: white;
-        position: absolute;
-        left: 10%;
-        top: 38%;
-        font-size: 1.4rem;
-        
-        }
+   
     #twitter-logo{
         width: 1.4rem;
         }
 }
 
-
+a{
+    color: var(--background-color1);
+}
+#contact{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
 svg{
-    fill:rgb(255, 255, 255);
-    margin: 0.5rem;
+  margin: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.pillar{
-    width: 100%;
-    height: auto;
+.twitter:hover{
+    color: white;
 }
+svg:hover{ 
+    fill: hsl(24, 100%, 60%);
+}
+
