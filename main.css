@@ -1,32 +1,37 @@
 :root{
     --background-color1: #181818;
     --background-color2: #0f0f0f;
-    --orange-color: #FF6700;
+    --orange-color: #ff6700;
 
 }
 
 body{
-    background-color: var(--background-color1);
+    background-color: black;
     height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
+    background-image: radial-gradient(rgb(255, 103, 0) 0.6px, transparent 0);
+    background-size: 30px 30px;
+    overflow: hidden;
 }
+
+.title{
+    position: relative;
+    text-align: center;
+    top: 10%;
+    
+}
+
 h1{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: hsl(24, 99%, 58%);
-    position: relative;
-    left: 50%;
-    top: 20%;
-    text-align: center;
+    
 }
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
   
     #twitter-logo{
-        width: 2rem;
+        width: 1rem;
     }
     
 }
@@ -57,15 +62,13 @@ a{
     margin: 1rem;
 }
 svg{
-  margin: 1rem;
+  margin: 0.2rem;
   width: 1.5rem;
-  height: 1.5rem;
+  fill: hsl(24, 100%, 64%);
 }
 
-.twitter:hover{
-    color: white;
+svg:hover path {
+    fill: #78ebff;
 }
-svg:hover{ 
-    fill: hsl(24, 100%, 60%);
-}
+
 
