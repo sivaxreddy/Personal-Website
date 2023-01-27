@@ -16,7 +16,8 @@ body{
 .title{
     position: relative;
     text-align: center;
-    top: 10%;
+    top: 5%;
+    left: -10%;
     
 }
 
