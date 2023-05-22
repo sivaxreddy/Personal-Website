@@ -2,6 +2,46 @@ body,ul{
   margin:0;
   padding:0;
 }
+
+/*--------------star animation--------------------*/
+
+html {
+    height: 100%;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-top: -60px;
+    padding-left: 10px;
+}
+
+#title span {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.top{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  color: white;
+  font-family: cursive;
+  font-size: 3rem;
+}
+
 a{
   color:#fff;
   text-decoration:none;
@@ -18,82 +58,6 @@ a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-#menu{
-  display:flex;
-  list-style:none;
-  gap:.5rem;
-}
-#menu a{
-  display:block;
-  padding:.5rem;
-}
-#btn{
-  display:none;
-}
-@media(max-width:600px){
- 
-  #menu{
-    display:block;
-    position:absolute;
-    width:100%;
-    top:70px;
-    right:0px;
-    background:#000;
-    height:0px;
-    transition:.6s;
-    z-index:1000;
-    visibility:hidden;
-    overflow-y:hidden;
-  }  
-  #nav.active #menu{
-    height: calc(100vh - 70px);
-    visibility:visible;
-  }
-  #menu a {
-    padding:1rem 0;
-    margin:0 1rem;
-   
-  }
-  #btn{
-    display:flex;
-    padding:.5rem 1rem;
-    font-size:1rem;
-    border:none;
-    background:none;
-    cursor:pointer;
-    gap:0.5rem
-    
-}
-  #hamburguer{
-    display:block;
-    width:20px;
-    border-top:2px solid;
-    color:#fff;
-  }
-  #hamburguer::after, #hamburguer::before{
-    content:'';
-    display:block;
-    width:20px;
-    height:2px;
-    background:currentColor;
-    margin-top:5px;
-    transition:.3s;
-    position:relative
-    
-  }
-  #nav.active #hamburguer{
-    border-top-color:transparent;
-  }
-    #nav.active #hamburguer::before{
-      transform:rotate(135deg);
-  }
-    #nav.active #hamburguer::after{
-      transform:rotate(-135deg);
-      top:-7px;
-  }
-    
-  }
 
 /*--------------star animation--------------------*/
 
@@ -700,26 +664,6 @@ html {
     }
     
 }
-
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-   
-    #twitter-logo{
-        width: 1.4rem;
-    }
-}
-
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-   
-    #twitter-logo{
-        width: 1.4rem;
-        }
-}
-
-a{
-    color: var(--background-color1);
-}
 #contact{
     position: fixed;
     bottom: 0;
@@ -737,3 +681,42 @@ svg:hover path {
 }
 
 
+
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+   
+    #twitter-logo{
+        width: 1.4rem;
+    }
+}
+#contact{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
+svg{
+  margin: 0.2rem;
+  width: 1.5rem;
+  fill: hsl(0, 0%, 100%);
+}
+
+svg:hover path {
+    fill: #78ebff;
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+    h1{
+        font-size: 3rem;}
+      }
+@media only screen and (max-width: 600px){
+  	/*Big smartphones [426px -> 600px]*/
+    h1{
+        font-size: 3rem;}
+      }
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    h1{
+          font-size: 2rem;}
+      }
