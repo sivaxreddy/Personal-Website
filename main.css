@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
   background-color: black;
 }
 
@@ -11,12 +12,24 @@ h1 {
   transform: translateX(-50%);
   margin: 0;
   color: white ;
-}
-#contact {
-  position: fixed;
-  bottom: 20px; 
-  right: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 svg {
-      fill: white;
+  fill: white;
+  margin: 0.5em;
+}
+
+.bat{
+  fill: white;
+  margin: 0.5em;
+  max-width: 80%;
+  padding: 20px;
+  height: calc(100vh * 0.618);
+}
+
+.batbody{
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  height: 100%; /* Fill the viewport height */
 }
