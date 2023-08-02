@@ -31,5 +31,13 @@ svg {
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
-  height: 100%; /* Fill the viewport height */
+  
+
+  /* Add the white shadow using the filter property */
+  filter: drop-shadow(0 0 0.9em white);
+}
+#contact{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
 }
