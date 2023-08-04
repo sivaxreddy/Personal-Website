@@ -14,16 +14,73 @@
     <meta name="theme-color" content="#40bbf8">
 
     <style>
+    :root{
+    --main-color: #d9d6d1;
+    --secondary-color:#cdcbc6;
+    --main-colorb:#131415;
+    --secondary-colorb:#1c1e1f;
+    }
     body{
-        background-color: #131415;
-
+        background-color: var(--main-colorb);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     } 
+    #body{
+        top: 1em;
+        bottom: 1em;
+        position: fixed;
+        height: 100vh;
+        background-color: var(--secondary-colorb);
+        width: 40%;
+        min-width: 400px; /* Optional: Set a minimum width for the div */
+        padding: 20px;
+        border-radius: 0.5em;
+
+    }
+    h1{
+        position: fixed;
+        top: 2rem;
+        color: var(--main-color);
+    }
+    p,li{
+        color: var(--secondary-color);
+        font-family: sans-serif;
+        padding-top: 0.5em;
+    }
+
+    
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  var currentDateElement = document.getElementById("current-date");
+  var currentDate = new Date();
+
+  var options = { year: 'numeric', month: 'long', day: 'numeric' };
+  var formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+  currentDateElement.textContent = formattedDate;
+});
+    </script>
 </head>
+
 <body>
-    <div id="body" style="background-color: #1c1e1f">
+    <div id="body">
+        <p id="current-date"></p>
         <H1>The Begining</H1>
 
+        <p style="position: relative; top: 2em;">
+            <li>Setting up subdirectory is easy, i just over complicated it in my head,
+                should have just tried writing code in my own, instead of over reading stuff.
+            </li>
+            <li>
+                2 hrs around and to set this subdirectory.
+            </li>
+        </p>
     </div>
+    
 </body>
 </html>
