@@ -26,11 +26,16 @@ svg {
   padding: 20px;
   height: calc(100vh * 0.618);
 }
-
+@media only screen and (min-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+  #bat{
+    min-width: 60%;
+  }
+}
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
   #bat{
-    min-width: 70%;
+    min-width: 60%;
   }
 }
 @media only screen and (max-width: 600px){
