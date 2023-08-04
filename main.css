@@ -27,6 +27,24 @@ svg {
   height: calc(100vh * 0.618);
 }
 
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+  #bat{
+    min-width: 70%;
+  }
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+  #bat{
+    min-width: 70%;
+  }
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+  #bat{
+    min-width: 70%;
+  } 
+}
 .batbody{
   display: flex;
   align-items: center; /* Center items vertically */
