@@ -25,6 +25,7 @@ svg {
   max-width: 80%;
   padding: 20px;
   height: calc(100vh * 0.618);
+
 }
 @media only screen and (min-width: 1200px){
     /*Tablets [601px -> 1200px]*/
@@ -36,6 +37,7 @@ svg {
     /*Tablets [601px -> 1200px]*/
   #bat{
     min-width: 50%;
+    
   }
 }
 @media only screen and (max-width: 600px){
@@ -57,7 +59,7 @@ svg {
   
 
   /* Add the white shadow using the filter property */
-  filter: drop-shadow(0 0 0.9em white);
+  filter: drop-shadow(0 0 1.4em rgb(255, 246, 246));
 }
 #contact{
   position: absolute;
