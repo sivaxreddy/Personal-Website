@@ -29,25 +29,25 @@ svg {
 @media only screen and (min-width: 1200px){
     /*Tablets [601px -> 1200px]*/
   #bat{
-    min-width: 60%;
+    min-width: 40%;
   }
 }
 @media only screen and (max-width: 1200px){
     /*Tablets [601px -> 1200px]*/
   #bat{
-    min-width: 60%;
+    min-width: 50%;
   }
 }
 @media only screen and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
   #bat{
-    min-width: 70%;
+    min-width: 50%;
   }
 }
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
   #bat{
-    min-width: 70%;
+    min-width: 60%;
   } 
 }
 .batbody{
