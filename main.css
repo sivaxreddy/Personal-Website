@@ -66,3 +66,12 @@ svg {
   bottom: 1em;
   right: 1em;
 }
+
+#Button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid black;
+  cursor: pointer;
+}
