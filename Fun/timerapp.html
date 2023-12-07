@@ -5,91 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timer</title>
   <style>
+    @font-face {
+      font-family: 'Drugstore';
+      src: url('path_to_drugstore_font_file.ttf') format('truetype'); /* Replace 'path_to_drugstore_font_file.ttf' with the actual path to your Drugstore font file */
+    }
+
     body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin-top: 50px;
-      font-size: 24px;
-      overflow: hidden; /* Added to remove the scroll bar */
+      font-family: 'Drugstore', sans-serif; /* Use the Drugstore font for the entire document */
     }
 
     #timer {
+      font-family: 'Drugstore', sans-serif; /* Use the Drugstore font for the timer */
+      font-size: 1.5em; /* Increase the font size by 1.5x */
       position: absolute;
-      top: 30%; /* Moved the timer 30% down from the top of the page */
+      top: 30%; /* Position the timer 30% down from the top of the page */
       left: 50%;
       transform: translate(-50%, -50%);
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the timer */
+    }
+
+    .button-container button {
+      transform: scale(2); /* Increased the size of buttons by 2x */
+      font-weight: bold; /* Make the button text bold */
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the buttons */
     }
 
     .button-container {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      gap: 1em; /* Added gap between buttons */
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      justify-content: space-around; /* Distribute space around the buttons */
+      align-items: center; /* Vertically center the buttons */
       height: 100vh;
     }
   </style>
 </head>
 <body>
-
-<div class="container">
-  <div id="timer">00:00:00:000</div>
-  <div class="button-container">
-    <button onclick="startTimer()">Start</button>
-    <button onclick="stopTimer()">Stop</button>
-    <button onclick="resetTimer()">Reset</button>
+  <div class="container">
+    <div id="timer" class="timer">00:00:00:000</div>
+    <div class="button-container">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="stopTimer()">Stop</button>
+      <button onclick="resetTimer()">Reset</button>
+    </div>
   </div>
-</div>
 
-<script>
-  let timer;
-  let startTime;
-  let isRunning = false;
+  <script>
+    let timerInterval;
+    let startTime;
+    let elapsedTime = 0;
+    let timerElement = document.getElementById('timer');
 
-  function updateTimer() {
-    const currentTime = new Date().getTime();
-    let elapsedTime = currentTime - startTime;
-
-    let hours = Math.floor(elapsedTime / 3600000);
-    elapsedTime %= 3600000;
-    let minutes = Math.floor(elapsedTime / 60000);
-    elapsedTime %= 60000;
-    let seconds = Math.floor(elapsedTime / 1000);
-    let milliseconds = elapsedTime % 1000;
-
-    const formattedTime = `${padNumber(hours)}:${padNumber(minutes)}:${padNumber(seconds)}:${padNumber(milliseconds, 3)}`;
-    document.getElementById('timer').innerText = formattedTime;
-  }
-
-  function padNumber(num, length = 2) {
-    return num.toString().padStart(length, '0');
-  }
-
-  function startTimer() {
-    if (!isRunning) {
-      startTime = new Date().getTime();
-      timer = setInterval(updateTimer, 10); // Changed to increment every 10 milliseconds
-      isRunning = true;
+    function startTimer() {
+      startTime = Date.now() - elapsedTime;
+      timerInterval = setInterval(updateTimer, 10);
     }
-  }
 
-  function stopTimer() {
-    clearInterval(timer);
-    isRunning = false;
-  }
+    function stopTimer() {
+      clearInterval(timerInterval);
+    }
 
-  function resetTimer() {
-    clearInterval(timer);
-    isRunning = false;
-    document.getElementById('timer').innerText = '00:00:00:000';
-  }
-</script>
+    function resetTimer() {
+      clearInterval(timerInterval);
+      elapsedTime = 0;
+      timerElement.textContent = '00:00:00:000';
+    }
 
+    function updateTimer() {
+      const currentTime = Date.now();
+      elapsedTime = currentTime - startTime;
+      const formattedTime = new Date(elapsedTime).toISOString().substr(11, 11);
+      timerElement.textContent = formattedTime + ':' + String(elapsedTime).slice(-3);
+    }
+  </script>
 </body>
 </html>
