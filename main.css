@@ -5,6 +5,11 @@ body, html {
   background-color: black;
 }
 
+header {
+  background-color: black;
+  color: white;
+}
+
 h1 {
   position: absolute;
   bottom: 0.6em;
